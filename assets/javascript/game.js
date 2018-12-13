@@ -18,15 +18,19 @@ function startGame() {
     $('#green').addClass("crystal-number");
     $('#pink').addClass("crystal-number");
     $('#purple').addClass("crystal-number");
+    $("#blue").attr("value", blue);
+    $("#green").attr("value", green);
+    $("#pink").attr("value", pink);
+    $("#purple").attr("value", purple);
     score = 0;
-    $('#user-number').text(score);
+    $("#user-number").text(score);
 }
 
 startGame();
 
-$(".crystals").on("click", function() {
-    var crystalValue = $(this).attr(".crystal-number");
-    score = score + crystalValue;
+$(".crystal-number").on("click", function() {
+    var crystalValue = $(this).attr("value");
+    score = score + parseInt(crystalValue);
     $('#user-number').text(score);
 
     if (score === targetNumber) {
