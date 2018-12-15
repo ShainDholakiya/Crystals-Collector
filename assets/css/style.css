@@ -17,3 +17,17 @@ img {
     width: 100px;
     margin: 10px;
 }
+.container {
+    background-color: black;
+    text-align: center;
+    padding: 0px 15px 15px 15px;
+    position: absolute; 
+    margin-left: 225px;
+    border: solid 1px;
+    border-color: white;
+}
+p {
+    color: white;
+    text-align: left;
+    line-height: 1.5;
+}
