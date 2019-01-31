@@ -1,4 +1,4 @@
-# unit-4-game
+# Crystals-Collector
 
 https://shaindholakiya.github.io/unit-4-game/
 
